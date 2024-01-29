@@ -116,4 +116,4 @@ create_table('Konya Gıda ve Tarım Üniversitesi')
 
 refresh_tables();
 
-setInterval(refresh_tables, 1000);
+setInterval(refresh_tables, 10000);
