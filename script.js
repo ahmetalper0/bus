@@ -30,7 +30,7 @@ function create_table(table_header_name) {
 
 function fetch_and_fill_table_data(route_no, table_id) {
 
-    fetch(`https://1c895a97-8290-49a8-8620-f60558be27ae.deepnoteproject.com/bus_info/${route_no}`)
+    fetch(`https://e628bdaf-bd2a-4e57-a3d3-99e634f3f845.deepnoteproject.com/bus_info/${route_no}`)
 
         .then(response => response.json())
 
