@@ -30,7 +30,7 @@ function create_table(table_header_name) {
 
 function fetch_and_fill_table_data(route_no, table_id) {
 
-    fetch(`https://e628bdaf-bd2a-4e57-a3d3-99e634f3f845.deepnoteproject.com/bus_info/${route_no}`)
+    fetch(`https://ahmetalper-api.hf.space/bus/${route_no}`)
 
         .then(response => response.json())
 
@@ -105,6 +105,7 @@ function refresh_tables() {
     fetch_and_fill_table_data(26, 'Anıt');
     fetch_and_fill_table_data(25, 'Konevi');
     fetch_and_fill_table_data(1804, 'Konya Gıda ve Tarım Üniversitesi');
+    fetch_and_fill_table_data(95, 'Serhat');
 }
 
 create_table('Stad')
@@ -113,7 +114,8 @@ create_table('Millet Bahçesi')
 create_table('Anıt')
 create_table('Konevi')
 create_table('Konya Gıda ve Tarım Üniversitesi')
+create_table('Serhat')
 
 refresh_tables();
 
-setInterval(refresh_tables, 10000);
+setInterval(refresh_tables, 30000);
